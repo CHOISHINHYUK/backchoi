@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BackChoi</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+html{
+  height:100%;
+   position:relative;
+   margin:0;
+}
+body {
+  height:100%;
+  margin:0;
+}
+
+header {
+    background-color: #666;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    color: white;
+    height:10%
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+height:80%;
+}
+
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+    height: 100%;
+}
+
+/* Style the footer */
+/*footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}*/
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+</style>
+</head>
+<body>
+<header>
+  <h2><a href="main.html">BackChoi</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="chest.html">Chest</a></li>
+      <li><a href="back.html">Back</a></li>
+      <li><a href="shoulder.html">Shoulder</a></li>
+      <li><a href="leg.html">Leg</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1>Main</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/b17pmkCIvw0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    위처럼 동영상을 첨부하고 그밑에  운동에대한 설명 및 여러기타사항 정보들을 이 아래에 내용이 입력될 예정
+    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+    @@@@@@@@@@@@@@@@@@@@@@@예시 페이지 디자인 예시
+  </article>
+</section>
+
+<!--<footer>
+  <p>Footer</p>
+</footer>-->
+
+</body>
+</html>
